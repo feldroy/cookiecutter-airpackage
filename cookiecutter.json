@@ -1,0 +1,7 @@
+{
+  "name": "AirPackage",
+  "slug": "{{ cookiecutter.name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "description": "An incredible Air package that does things.",
+  "author_name": "Your name here",
+  "author_email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@example.com"
+}
