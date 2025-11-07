@@ -9,11 +9,9 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "air>=0.39.0",
-    "greenlet>=3.2.4", # Dependency for SQLAlchemy to run async
-    "sqlmodel>=0.0.27",
 ]
-urls.Homepage = "https://github.com/pydanny/airsqlmodel"
-urls.Issues = "https://github.com/pydanny/airsqlmodel/issues"
+urls.Homepage = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.slug}}"
+urls.Issues = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.slug}}/issues"
 
 [dependency-groups]
 dev = [
@@ -21,7 +19,6 @@ dev = [
     "pytest>=8.4.2",    
     "ruff>=0.14.3",    
     "rust-just>=1.43.0",
-    "pytest-asyncio>=1.1.0", # Adds asyncio support for pytest
 ]
 
 
@@ -31,5 +28,5 @@ build-backend = "uv_build"
 
 
 [tool.pytest_env]
-# Test value for the SUPER_SECRET_KEY environment variable
+# Test value for the SUPER_SECRET_KEY environment variables
 # DATABASE_URL = "sqlite:///:memory:"
